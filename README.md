@@ -10,5 +10,6 @@ install [PointNet++](https://arxiv.org/abs/1706.02413) layers:
 
 ```
 cd pointnet2
-sh init.sh
+python setup.py install --user
+cd ..
 ```
