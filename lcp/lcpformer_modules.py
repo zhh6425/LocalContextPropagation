@@ -2,13 +2,13 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-import pointnet2_utils
-
 import os
 import sys
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(BASE_DIR)
+
+import pointnet2.pointnet2_utils as pointnet2_utils
 
 def fps_sampler(npoints):
     def fps_sampler_(xyz):
